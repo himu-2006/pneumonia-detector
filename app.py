@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 from train import (
-    run_training,
+    
     is_xray,
     calibrate,
     load_pneumonia_model,
