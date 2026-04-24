@@ -2,15 +2,7 @@ import json
 import streamlit as st
 import matplotlib.pyplot as plt
 
-from train import (
-    
-    is_xray,
-    calibrate,
-    load_pneumonia_model,
-    load_temperature,
-    predict,
-    create_pdf,
-)
+
 
 st.set_page_config(page_title="Radiology AI", layout="wide")
 
