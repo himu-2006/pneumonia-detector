@@ -29,9 +29,7 @@ st.sidebar.markdown("---")
 st.sidebar.write("⚠️ Educational use only")
 
 st.sidebar.markdown("---")
-st.sidebar.subheader("🔧 Model Controls")
-if st.sidebar.button("🚀 Retrain Model"):
-    run_training(st)
+
 
 # ================================================================
 #  LOAD MODEL & TEMPERATURE
@@ -39,8 +37,7 @@ if st.sidebar.button("🚀 Retrain Model"):
 
 model, model_loaded = load_pneumonia_model()
 
-if not model_loaded:
-    st.warning("⚠️ No trained model found. Use '🚀 Retrain Model' in the sidebar first.")
+
 
 TEMPERATURE = load_temperature()
 if TEMPERATURE > 5.0:
